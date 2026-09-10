@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Global Gate Students Network — Website
 
-## Getting Started
+Next.js + GSAP marketing site for Global Gate Students Network (Study in Hungary admissions consultancy).
 
-First, run the development server:
+## Stack
+
+- **Next.js** (App Router) + TypeScript + Tailwind CSS v4 + shadcn/ui
+- **GSAP** + `@gsap/react`
+- **Google Sheets** for enquiry storage (Apps Script webhook)
+
+## Develop
 
 ```bash
+cd website
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Connect Google Sheets (enquiries)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Create a Google Sheet
+2. Open `scripts/google-sheets-enquiry.gs` and follow the comments inside
+3. Deploy as a **Web app** (Anyone can access)
+4. Put the Web App URL in `.env.local`:
 
-## Learn More
+```env
+GOOGLE_SHEETS_WEBHOOK_URL=https://script.google.com/macros/s/XXXX/exec
+```
 
-To learn more about Next.js, take a look at the following resources:
+5. Restart the dev server and submit a test enquiry
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Without the env var, the form still works and logs to the server console (local/dev only).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## WhatsApp
 
-## Deploy on Vercel
+All WhatsApp buttons open a chat with a pre-filled message:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> Hi Global Gate, my name is _____ and I am interested in studying in Hungary...
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit the default in `src/lib/site.ts` → `whatsappDefaultMessage`.
+
+## Project map
+
+- `src/lib/site.ts` — brand, nav, pricing, FAQs, WhatsApp helper
+- `src/components/` — layout, heroes, form, logo
+- `src/app/api/enquire/route.ts` — posts to Google Sheets webhook
+- `scripts/google-sheets-enquiry.gs` — Apps Script to paste into Google
+
+## Before production
+
+1. Set `GOOGLE_SHEETS_WEBHOOK_URL`
+2. Confirm email spelling / alert inbox
+3. Approve legal wording (refunds / outcomes)
+4. Add Tommy’s photo
+5. Prefer higher-res photos (1920px+) for sharper heroes
+6. Connect domain
