@@ -24,10 +24,15 @@ export const metadata: Metadata = {
     template: `%s | ${site.shortName}`,
   },
   description: site.description,
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+  },
   openGraph: {
     title: site.name,
     description: site.description,
     type: "website",
+    images: [{ url: "/images/logo.png" }],
   },
 };
 
