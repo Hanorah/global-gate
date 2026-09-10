@@ -27,16 +27,27 @@ export function Header() {
     setOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [open]);
+
   return (
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        inverted
-          ? "bg-transparent"
-          : "border-b border-border/70 bg-background/85 shadow-[0_10px_40px_rgba(18,17,15,0.06)] backdrop-blur-xl",
+        open
+          ? "border-transparent bg-background"
+          : inverted
+            ? "bg-transparent"
+            : "border-b border-border/70 bg-background/85 shadow-[0_10px_40px_rgba(18,17,15,0.06)] backdrop-blur-xl",
       )}
     >
-      <div className="container-page flex h-16 items-center justify-between gap-4 md:h-[4.5rem]">
+      <div className="container-page relative z-[60] flex h-16 items-center justify-between gap-4 md:h-[4.5rem]">
         <BrandLogo
           showWordmark
           className={cn(
@@ -91,7 +102,8 @@ export function Header() {
             variant="ghost"
             size="icon"
             className={cn("lg:hidden", inverted && "text-white hover:bg-white/10 hover:text-white")}
-            aria-label="Toggle menu"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X /> : <Menu />}
@@ -99,29 +111,56 @@ export function Header() {
         </div>
       </div>
 
-      {open ? (
-        <div className="border-t border-border bg-background lg:hidden">
-          <nav className="container-page flex flex-col gap-1 py-4">
+      <div
+        className={cn(
+          "fixed inset-0 z-50 flex flex-col bg-background lg:hidden",
+          "transition-opacity duration-300",
+          open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
+        )}
+        aria-hidden={!open}
+      >
+        <div className="flex h-full flex-col px-6 pb-10 pt-24">
+          <nav className="flex flex-1 flex-col justify-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-xl px-3 py-3 text-sm font-medium hover:bg-muted"
+                className={cn(
+                  "border-b border-border/60 py-4 font-display text-3xl tracking-tight transition-colors sm:text-4xl",
+                  pathname === link.href ? "text-foreground" : "text-foreground/70 hover:text-foreground",
+                )}
                 onClick={() => setOpen(false)}
+                tabIndex={open ? 0 : -1}
               >
                 {link.label}
               </Link>
             ))}
+          </nav>
+
+          <div className="mt-8 flex flex-col gap-3">
             <Button
               nativeButton={false}
               render={<Link href="/enquire" onClick={() => setOpen(false)} />}
-              className="mt-2 rounded-full"
+              className="h-12 w-full rounded-full"
+              tabIndex={open ? 0 : -1}
             >
               Enquire now
+              <ArrowUpRight className="size-4" />
             </Button>
-          </nav>
+            <Button
+              nativeButton={false}
+              render={
+                <Link href={whatsappUrl()} target="_blank" rel="noreferrer" onClick={() => setOpen(false)} />
+              }
+              variant="outline"
+              className="h-12 w-full rounded-full"
+              tabIndex={open ? 0 : -1}
+            >
+              WhatsApp
+            </Button>
+          </div>
         </div>
-      ) : null}
+      </div>
     </header>
   );
 }

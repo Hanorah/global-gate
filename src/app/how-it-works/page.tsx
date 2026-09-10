@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/CtaBand";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { createPageMetadata } from "@/lib/seo";
 import { journeySteps, pageHeroes, site } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "How it works",
-  description: "From first enquiry to settling in Hungary — the Global Gate support journey.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "How It Works",
+  description:
+    "See how Global Gate guides you from first enquiry to arrival in Hungary — programme choice, applications, visa prep, and post-arrival support.",
+  path: "/how-it-works",
+  image: pageHeroes.howItWorks.image,
+});
 
 export default function HowItWorksPage() {
   return (
