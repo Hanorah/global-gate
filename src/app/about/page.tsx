@@ -34,7 +34,7 @@ export default function AboutPage() {
                   alt={`${site.founder.name}, ${site.founder.role}`}
                   fill
                   quality={95}
-                  className="object-cover object-[center_18%]"
+                  className="object-cover object-[center_12%]"
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   priority
                 />

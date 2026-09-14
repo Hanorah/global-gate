@@ -31,7 +31,7 @@ export default function TestimonialsPage() {
           {testimonials.map((item, i) => (
             <Reveal key={item.name} delay={(i % 2) * 0.06}>
               <Card className="h-full overflow-hidden rounded-[1.75rem] border-border/60 bg-white shadow-none">
-                <div className="relative h-64 md:h-72">
+                <div className="relative aspect-[4/5]">
                   <Image
                     src={item.image}
                     alt={item.name}

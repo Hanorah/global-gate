@@ -288,7 +288,7 @@ export default function HomePageClient() {
             {testimonials.slice(0, 3).map((item, i) => (
               <Reveal key={item.name} delay={i * 0.07}>
                 <Card className="h-full overflow-hidden rounded-[1.75rem] border-border/60 bg-white shadow-none">
-                  <div className="relative h-52 overflow-hidden">
+                  <div className="relative aspect-[4/5]">
                     <Image
                       src={item.image}
                       alt={item.name}
