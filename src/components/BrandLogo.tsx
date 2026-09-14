@@ -13,7 +13,7 @@ type Props = {
 export function BrandLogo({ className, size = "nav", showWordmark = false }: Props) {
   const dims =
     size === "nav"
-      ? { wrap: "h-10 w-10 sm:h-11 sm:w-11", img: 88 }
+      ? { wrap: "h-11 w-11 sm:h-12 sm:w-12", img: 96 }
       : size === "footer"
         ? { wrap: "h-24 w-24 md:h-28 md:w-28", img: 224 }
         : { wrap: "h-36 w-36 md:h-44 md:w-44", img: 352 };
@@ -22,16 +22,16 @@ export function BrandLogo({ className, size = "nav", showWordmark = false }: Pro
     <Link href="/" className={cn("inline-flex items-center gap-3", className)}>
       <span
         className={cn(
-          "relative shrink-0 overflow-hidden rounded-2xl bg-white shadow-[0_8px_24px_rgba(18,17,15,0.12)] ring-1 ring-black/5",
+          "relative shrink-0 overflow-hidden rounded-2xl bg-black ring-1 ring-white/15",
           dims.wrap,
         )}
       >
         <Image
-          src="/images/logo.png"
+          src="/images/global-gate-logo.png"
           alt={site.name}
           width={dims.img}
           height={dims.img}
-          className="h-full w-full object-contain p-0.5"
+          className="h-full w-full object-cover"
           quality={95}
           priority={size === "nav"}
         />

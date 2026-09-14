@@ -161,7 +161,7 @@ export const testimonials = [
     quote:
       "Clear guidance and steady communication. I always knew what to send next.",
     image: "/images/people/daniel.jpg",
-    objectPosition: "center 12%",
+    objectPosition: "center 15%",
   },
   {
     name: "Laurence Sedalia Amartey",
@@ -169,7 +169,7 @@ export const testimonials = [
     quote:
       "From application questions to arrival planning, the support felt practical and human.",
     image: "/images/people/laurence.jpg",
-    objectPosition: "center 12%",
+    objectPosition: "center 30%",
   },
   {
     name: "Sulaiman Sankoh",
@@ -177,7 +177,7 @@ export const testimonials = [
     quote:
       "I trusted Global Gate because referrals from other students backed what they said.",
     image: "/images/people/sulaiman.jpg",
-    objectPosition: "center 18%",
+    objectPosition: "center 28%",
   },
   {
     name: "Khadija Sankoh",
