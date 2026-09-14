@@ -34,7 +34,7 @@ export default function TestimonialsPage() {
                 <div className="relative h-64 md:h-72">
                   <Image
                     src={item.image}
-                    alt=""
+                    alt={item.name}
                     fill
                     className="object-cover"
                     style={{ objectPosition: item.objectPosition }}

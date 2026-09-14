@@ -291,7 +291,7 @@ export default function HomePageClient() {
                   <div className="relative h-52 overflow-hidden">
                     <Image
                       src={item.image}
-                      alt=""
+                      alt={item.name}
                       fill
                       className="object-cover"
                       style={{ objectPosition: item.objectPosition }}

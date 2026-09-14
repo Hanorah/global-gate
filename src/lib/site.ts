@@ -7,6 +7,7 @@ export const site = {
   founder: {
     name: "Tommy Kaiza Koker",
     role: "Co-Founder & Chief Executive Officer",
+    image: "/images/people/tommy.jpg",
   },
   contact: {
     email: "globalgatestudynetwork@gmail.com",
@@ -42,6 +43,10 @@ export const site = {
     seatedGraduates: "/images/gallery/seated-graduates.jpg",
     motherDaughter: "/images/gallery/mother-daughter.jpg",
     sectionGraduates: "/images/section-graduates.jpg",
+    tommy: "/images/people/tommy.jpg",
+    daniel: "/images/people/daniel.jpg",
+    laurence: "/images/people/laurence.jpg",
+    sulaiman: "/images/people/sulaiman.jpg",
   },
 } as const;
 
@@ -151,36 +156,36 @@ export const documents = [
 /** objectPosition uses CSS values — prefer center / mid-face, not top of frame */
 export const testimonials = [
   {
-    name: "Khadija Sankoh",
-    context: "Sierra Leonean · based in the USA",
-    quote:
-      "Having someone on the ground in Hungary made the process feel real — not like another online promise.",
-    image: "/images/gallery/mother-daughter.jpg",
-    objectPosition: "center 40%",
-  },
-  {
     name: "Daniel H.R. Wahif Massaquoi",
     context: "Sierra Leonean · based in Dubai",
     quote:
       "Clear guidance and steady communication. I always knew what to send next.",
-    image: "/images/gallery/portrait-red-stole.jpg",
-    objectPosition: "center 35%",
+    image: "/images/people/daniel.jpg",
+    objectPosition: "center 18%",
   },
   {
-    name: "Lawrence Sedalia Amartey",
+    name: "Laurence Sedalia Amartey",
     context: "Ghanaian · based in Dubai",
     quote:
       "From application questions to arrival planning, the support felt practical and human.",
-    image: "/images/gallery/portrait-lookback.jpg",
-    objectPosition: "center 38%",
+    image: "/images/people/laurence.jpg",
+    objectPosition: "center 18%",
   },
   {
     name: "Sulaiman Sankoh",
     context: "Sierra Leonean · based in Sierra Leone",
     quote:
       "I trusted Global Gate because referrals from other students backed what they said.",
-    image: "/images/gallery/duo-diploma.jpg",
-    objectPosition: "center 42%",
+    image: "/images/people/sulaiman.jpg",
+    objectPosition: "center 22%",
+  },
+  {
+    name: "Khadija Sankoh",
+    context: "Sierra Leonean · based in the USA",
+    quote:
+      "Having someone on the ground in Hungary made the process feel real — not like another online promise.",
+    image: "/images/gallery/mother-daughter.jpg",
+    objectPosition: "center 40%",
   },
 ] as const;
 
@@ -202,8 +207,8 @@ export const pageHeroes = {
     objectPosition: "center 42%",
   },
   about: {
-    image: "/images/gallery/mother-daughter.jpg",
-    objectPosition: "center 38%",
+    image: "/images/people/tommy.jpg",
+    objectPosition: "center 22%",
   },
   testimonials: {
     image: "/images/gallery/duo-point.jpg",

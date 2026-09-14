@@ -27,20 +27,22 @@ export default function AboutPage() {
       <section className="section-pad">
         <div className="container-page grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <Reveal>
-            <div className="overflow-hidden rounded-[2rem] bg-white p-4 shadow-[0_20px_50px_rgba(18,17,15,0.08)]">
-              <Image
-                src="/images/logo.png"
-                alt={site.name}
-                width={480}
-                height={480}
-                quality={95}
-                className="mx-auto h-auto w-full max-w-[280px] object-contain"
-              />
+            <div className="overflow-hidden rounded-[2rem] bg-white p-3 shadow-[0_20px_50px_rgba(18,17,15,0.08)]">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
+                <Image
+                  src={site.founder.image}
+                  alt={`${site.founder.name}, ${site.founder.role}`}
+                  fill
+                  quality={95}
+                  className="object-cover object-[center_18%]"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  priority
+                />
+              </div>
             </div>
             <Card className="mt-5 rounded-[1.5rem] border-0 bg-burgundy text-white shadow-none">
               <CardContent className="p-6">
-                <p className="text-sm text-gold-soft">Photo of Tommy coming soon</p>
-                <p className="mt-2 font-display text-2xl">{site.founder.name}</p>
+                <p className="font-display text-2xl">{site.founder.name}</p>
                 <p className="mt-1 text-sm text-white/65">{site.founder.role}</p>
               </CardContent>
             </Card>

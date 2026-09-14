@@ -100,6 +100,7 @@ export function organizationJsonLd() {
       "@type": "Person",
       name: site.founder.name,
       jobTitle: site.founder.role,
+      image: `${siteUrl}${site.founder.image}`,
     },
     sameAs: [site.contact.facebook, `https://wa.me/${site.contact.whatsappNumber}`],
     areaServed: ["Africa", "Europe", "Worldwide"],
