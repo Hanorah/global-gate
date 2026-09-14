@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://globalgatestudents.com";
 
-export const defaultOgImage = `${siteUrl}/images/global-gate-logo.png`;
+export const defaultOgImage = `${siteUrl}/images/global-gate-logo-v3.png`;
 
 export const siteKeywords = [
   "study in Hungary",
@@ -87,8 +87,8 @@ export function organizationJsonLd() {
     alternateName: ["GGSN", site.shortName],
     description: site.description,
     url: siteUrl,
-    logo: `${siteUrl}/images/global-gate-logo.png`,
-    image: `${siteUrl}/images/global-gate-logo.png`,
+    logo: `${siteUrl}/images/global-gate-logo-v3.png`,
+    image: `${siteUrl}/images/global-gate-logo-v3.png`,
     email: site.contact.email,
     telephone: site.contact.phone,
     address: {

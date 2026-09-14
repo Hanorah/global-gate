@@ -140,9 +140,7 @@ export function Header() {
           )}
         >
           <div className="flex items-center justify-between px-6 pb-2 pt-5">
-            <BrandLogo
-              className="[&_span]:ring-white/10"
-            />
+            <BrandLogo />
             <p className="text-[10px] font-semibold tracking-[0.2em] text-gold-soft uppercase">
               Menu
             </p>

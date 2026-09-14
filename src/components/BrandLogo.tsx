@@ -20,18 +20,13 @@ export function BrandLogo({ className, size = "nav", showWordmark = false }: Pro
 
   return (
     <Link href="/" className={cn("inline-flex items-center gap-3", className)}>
-      <span
-        className={cn(
-          "relative shrink-0 overflow-hidden rounded-2xl bg-black ring-1 ring-white/15",
-          dims.wrap,
-        )}
-      >
+      <span className={cn("relative shrink-0 overflow-visible", dims.wrap)}>
         <Image
-          src="/images/global-gate-logo.png"
+          src="/images/global-gate-logo-v3.png"
           alt={site.name}
           width={dims.img}
           height={dims.img}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           quality={95}
           priority={size === "nav"}
         />
