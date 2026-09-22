@@ -10,7 +10,7 @@ type Props = {
 
 export function CtaBand({
   title = "Ready when you are.",
-  body = `Fill the enquiry form and our team will review your details — usually ${site.responseSla}.`,
+  body = `Fill the enquiry form and our team will review your details, usually ${site.responseSla}.`,
 }: Props) {
   return (
     <section className="pb-[clamp(5rem,10vw,8rem)]">

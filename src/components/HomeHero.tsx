@@ -48,7 +48,7 @@ export function HomeHero() {
         <div className="hero-left max-w-lg">
           <p className="eyebrow !text-gold-soft">Study in Hungary</p>
           <p className="mt-5 text-xl font-medium leading-snug text-white/95 md:text-2xl lg:text-[1.7rem]">
-            Trusted guidance from first enquiry to arrival — led by a team living in Hungary.
+            Trusted guidance from first enquiry to arrival, led by a team living in Hungary.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Button

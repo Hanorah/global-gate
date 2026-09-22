@@ -89,7 +89,7 @@ export default function HomePageClient() {
               {
                 icon: MapPin,
                 title: "On the ground",
-                body: "Tommy is based in Hungary — processing and follow-up feel closer, clearer, faster.",
+                body: "Tommy is based in Hungary, so processing and follow-up feel closer, clearer, faster.",
               },
               {
                 icon: ShieldCheck,
@@ -319,7 +319,7 @@ export default function HomePageClient() {
             <p className="eyebrow">FAQ</p>
             <h2 className="mt-3 font-display text-4xl md:text-5xl">Common questions, answered clearly.</h2>
             <p className="mt-4 text-muted-foreground">
-              Trust, pricing, timelines, and what we can help with — without the sales fog.
+              Trust, pricing, timelines, and what we can help with, without the sales fog.
             </p>
             <Button
               nativeButton={false}

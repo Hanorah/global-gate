@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Geist, Playfair_Display } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { SiteChrome } from "@/components/SiteChrome";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/lib/site";
 import {
@@ -102,12 +104,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("h-full antialiased font-sans", geist.variable, playfair.variable)}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <JsonLd data={organizationJsonLd()} />
-        <JsonLd data={websiteJsonLd()} />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppFloat />
+        <ClerkProvider>
+          <JsonLd data={organizationJsonLd()} />
+          <JsonLd data={websiteJsonLd()} />
+          <SiteChrome>
+            <Header />
+          </SiteChrome>
+          <main className="flex-1">{children}</main>
+          <SiteChrome>
+            <Footer />
+            <WhatsAppFloat />
+          </SiteChrome>
+        </ClerkProvider>
       </body>
     </html>
   );

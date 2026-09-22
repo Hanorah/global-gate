@@ -63,7 +63,7 @@ export function createPageMetadata({
           url: absoluteImage,
           width: 1200,
           height: 630,
-          alt: `${site.name} — ${title}`,
+          alt: `${site.name} | ${title}`,
         },
       ],
     },

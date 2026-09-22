@@ -51,7 +51,7 @@ export default function AboutPage() {
           <Reveal delay={0.08} className="space-y-5 text-lg text-muted-foreground">
             <p>
               Tommy Kaiza Koker is a Sierra Leonean student leader, entrepreneur, and creative
-              professional — and the Co-Founder & Chief Executive Officer of Global Gate Students
+              professional, and the Co-Founder & Chief Executive Officer of Global Gate Students
               Network.
             </p>
             <p>
@@ -67,7 +67,7 @@ export default function AboutPage() {
             </p>
             <p>
               As CEO, Tommy leads the organisation’s vision, partnerships, communications, and
-              growth — with a simple commitment: connect students globally, create opportunities,
+              growth, with a simple commitment: connect students globally, create opportunities,
               and help the next generation learn, connect, and grow.
             </p>
             <div className="grid gap-4 pt-2 sm:grid-cols-2">

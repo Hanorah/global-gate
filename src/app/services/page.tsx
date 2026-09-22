@@ -20,7 +20,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Support across the full student journey."
-        body="From choosing a programme to finding your feet after landing in Hungary — practical, hands-on help at every stage."
+        body="From choosing a programme to finding your feet after landing in Hungary: practical, hands-on help at every stage."
         image={pageHeroes.services.image}
         objectPosition={pageHeroes.services.objectPosition}
         primaryHref="/enquire"

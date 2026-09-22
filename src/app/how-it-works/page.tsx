@@ -12,7 +12,7 @@ import { journeySteps, pageHeroes, site } from "@/lib/site";
 export const metadata: Metadata = createPageMetadata({
   title: "How It Works",
   description:
-    "See how Global Gate guides you from first enquiry to arrival in Hungary — programme choice, applications, visa prep, and post-arrival support.",
+    "See how Global Gate guides you from first enquiry to arrival in Hungary: programme choice, applications, visa prep, and post-arrival support.",
   path: "/how-it-works",
   image: pageHeroes.howItWorks.image,
 });
@@ -43,7 +43,7 @@ export default function HowItWorksPage() {
               />
             </div>
             <p className="mt-5 text-muted-foreground">
-              Every step is designed to reduce uncertainty — especially for first-time international applicants.
+              Every step is designed to reduce uncertainty, especially for first-time international applicants.
             </p>
             <Button nativeButton={false} render={<Link href="/services" />} className="mt-6 h-11 rounded-full px-5">
               Explore services

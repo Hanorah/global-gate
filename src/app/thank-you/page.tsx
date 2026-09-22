@@ -28,7 +28,7 @@ export default function ThankYouPage() {
           Thank you for contacting Global Gate.
         </h1>
         <p className="mt-5 text-lg text-muted-foreground">
-          Our team will review your details and get back to you shortly — usually {site.responseSla}.
+          Our team will review your details and get back to you shortly, usually {site.responseSla}.
           If you need anything sooner, message us on WhatsApp.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">

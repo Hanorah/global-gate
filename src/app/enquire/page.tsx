@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { PageHero } from "@/components/PageHero";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { pageHeroes, site, whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Enquire",
@@ -15,13 +14,23 @@ export const metadata: Metadata = {
 export default function EnquirePage() {
   return (
     <>
-      <PageHero
-        eyebrow="Enquire"
-        title="Tell us about your study goals."
-        body={`All fields are required so we can review your case properly. We typically reply ${site.responseSla}. Your answers are saved securely for our team to follow up.`}
-        image={pageHeroes.enquire.image}
-        objectPosition={pageHeroes.enquire.objectPosition}
-      />
+      {/*
+        Compact header instead of the usual full-photo PageHero — the wizard
+        below is designed to feel like "the whole screen" on mobile, and a
+        tall hero image would push it below the fold and undercut the
+        "takes under 2 minutes" promise. See docs/PLAN.md Section 2b.
+      */}
+      <section className="bg-burgundy pt-24 pb-10 text-white md:pt-28 md:pb-12">
+        <div className="container-page">
+          <p className="eyebrow !text-gold-soft">Enquire</p>
+          <h1 className="mt-3 max-w-2xl font-display text-4xl md:text-5xl">
+            Tell us about your study goals.
+          </h1>
+          <p className="mt-4 max-w-xl text-white/80">
+            A few quick taps, then your contact details. We typically reply {site.responseSla}.
+          </p>
+        </div>
+      </section>
 
       <section className="section-pad">
         <div className="container-page grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
@@ -78,8 +87,8 @@ export default function EnquirePage() {
                   After you submit
                 </p>
                 <p className="mt-3 text-muted-foreground">
-                  You will see a confirmation page. Our team reviews your details in Google Sheets
-                  and follows up — usually {site.responseSla}.
+                  You will see a confirmation page. Our team reviews your details and follows up,
+                  usually {site.responseSla}.
                 </p>
               </CardContent>
             </Card>

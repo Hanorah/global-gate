@@ -3,7 +3,7 @@ export const site = {
   shortName: "Global Gate",
   tagline: "Study in Hungary with guidance you can trust.",
   description:
-    "Global Gate Students Network helps students choose Hungarian study pathways, prepare strong applications, and settle in Hungary — with hands-on support from a team based there.",
+    "Global Gate Students Network helps students choose Hungarian study pathways, prepare strong applications, and settle in Hungary, with hands-on support from a team based there.",
   founder: {
     name: "Tommy Kaiza Koker",
     role: "Co-Founder & Chief Executive Officer",
@@ -70,7 +70,7 @@ export const footerExtraLinks = [
 export const services = [
   {
     title: "University and program selection",
-    body: "We match your grades, interests, and budget to suitable Hungarian programmes — then help you choose with confidence.",
+    body: "We match your grades, interests, and budget to suitable Hungarian programmes, then help you choose with confidence.",
   },
   {
     title: "Admission application support",
@@ -94,7 +94,7 @@ export const services = [
   },
   {
     title: "Accommodation search",
-    body: "We help you research housing options so you arrive with a clearer plan — not last-minute stress.",
+    body: "We help you research housing options so you arrive with a clearer plan, not last-minute stress.",
   },
   {
     title: "Airport pickup and arrival support",
@@ -135,6 +135,50 @@ export const journeySteps = [
     step: "05",
     title: "Settle in Hungary",
     body: "From airport support to banking and early mentoring, we stay with you as you begin student life.",
+  },
+] as const;
+
+/**
+ * General shortlist of prominent Stipendium Hungaricum partner universities —
+ * not a verified claim of Global Gate's actual placement history. Confirm
+ * against real placements before treating this as a track record. See
+ * docs/PLAN.md Section 4.5.
+ */
+export const hungarianUniversities = [
+  {
+    name: "Eötvös Loránd University (ELTE)",
+    location: "Budapest",
+    note: "One of Hungary's largest and oldest universities, strong in humanities, sciences, and law.",
+  },
+  {
+    name: "Budapest University of Technology and Economics (BME)",
+    location: "Budapest",
+    note: "Hungary's leading technical university for engineering, IT, and architecture.",
+  },
+  {
+    name: "Corvinus University of Budapest",
+    location: "Budapest",
+    note: "Well known for business, economics, and social sciences.",
+  },
+  {
+    name: "University of Debrecen",
+    location: "Debrecen",
+    note: "One of the largest international student populations in Hungary, including medicine.",
+  },
+  {
+    name: "University of Szeged",
+    location: "Szeged",
+    note: "A major research university with a wide range of English-taught programmes.",
+  },
+  {
+    name: "University of Pécs",
+    location: "Pécs",
+    note: "A long-established university with strong international and medical faculties.",
+  },
+  {
+    name: "Semmelweis University",
+    location: "Budapest",
+    note: "Hungary's dedicated medical university, widely chosen by international students.",
   },
 ] as const;
 
@@ -183,7 +227,7 @@ export const testimonials = [
     name: "Khadija Sankoh",
     context: "Sierra Leonean · based in the USA",
     quote:
-      "Having someone on the ground in Hungary made the process feel real — not like another online promise.",
+      "Having someone on the ground in Hungary made the process feel real, not like another online promise.",
     image: "/images/gallery/mother-daughter.jpg",
     objectPosition: "center 40%",
   },
@@ -258,6 +302,6 @@ export const faqs = [
   },
   {
     q: "Do you help with Stipendium Hungaricum?",
-    a: "We offer guidance and preparation support. Official Stipendium Hungaricum applications are free and submitted through official channels — we do not sell or guarantee scholarship awards.",
+    a: "We offer guidance and preparation support. Official Stipendium Hungaricum applications are free and submitted through official channels. We do not sell or guarantee scholarship awards.",
   },
 ] as const;

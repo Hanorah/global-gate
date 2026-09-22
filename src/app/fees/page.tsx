@@ -84,15 +84,18 @@ export default function FeesPage() {
         <Reveal className="container-page mt-12 max-w-3xl">
           <h3 className="font-display text-3xl">Refund summary</h3>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-            <li>Application fees are not refundable.</li>
+            <li>Application fees (${site.pricing.application.price}) are not refundable, regardless of outcome.</li>
             <li>
-              If a visa is refused after following the supported process, a 50% refund may apply to
-              the eligible package — confirmed in writing before you pay.
+              If your visa is refused after you followed the supported process fully and in good
+              faith, a 50% refund applies to the {site.pricing.fullGuide.label.toLowerCase()} package.
             </li>
-            <li>Final refund conditions appear in the Terms once legal wording is approved.</li>
+            <li>
+              If a visa refusal results from your own actions or omissions (for example, missing
+              appointments or providing false or incomplete information), no refund applies.
+            </li>
           </ul>
           <Button nativeButton={false} render={<Link href="/terms" />} variant="link" className="mt-4 px-0">
-            Read terms
+            Read full terms
           </Button>
         </Reveal>
       </section>

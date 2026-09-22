@@ -6,7 +6,7 @@ import { Reveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/CtaBand";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { documents, pageHeroes, site } from "@/lib/site";
+import { documents, hungarianUniversities, pageHeroes, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Study guide",
@@ -73,7 +73,7 @@ export default function GuidePage() {
             <h2 className="mt-3 font-display text-4xl md:text-5xl">Typical checklist</h2>
             <p className="mt-4 text-muted-foreground">
               Universities may request extras. After your enquiry, we will tell you exactly what to
-              send — by email if Google uploads are difficult.
+              send, with an email option if online uploads are difficult.
             </p>
             <div className="mt-8 overflow-hidden rounded-[1.75rem]">
               <Image
@@ -101,6 +101,33 @@ export default function GuidePage() {
               </CardContent>
             </Card>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="section-pad border-t border-border bg-surface">
+        <div className="container-page">
+          <Reveal>
+            <p className="eyebrow">Universities</p>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl">Hungarian universities to know</h2>
+            <p className="mt-4 max-w-2xl text-muted-foreground">
+              A shortlist of well-known Stipendium Hungaricum partner universities offering
+              English-taught programmes. Your advisor will confirm which fits your field, grades,
+              and budget during your enquiry.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {hungarianUniversities.map((uni, i) => (
+              <Reveal key={uni.name} delay={i * 0.04}>
+                <Card className="h-full rounded-[1.5rem] border-border/60 bg-white/90 shadow-none">
+                  <CardContent className="p-6">
+                    <h3 className="font-display text-xl leading-tight">{uni.name}</h3>
+                    <p className="eyebrow mt-2">{uni.location}</p>
+                    <p className="mt-3 text-sm text-muted-foreground">{uni.note}</p>
+                  </CardContent>
+                </Card>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

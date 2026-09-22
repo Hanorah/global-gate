@@ -1,0 +1,235 @@
+GLOBAL GATE STUDENTS NETWORK — AI IMAGE GENERATION PROMPTS
+============================================================
+Purpose: Replace generic/mismatched stock photography (current site uses a Saudi
+graduation photo, a Southeast Asian campus photo, etc.) with imagery that actually
+reflects the audience (Sierra Leonean / West African applicants) while keeping the
+"students in Hungary" setting and the site's warm, editorial, burgundy-and-gold vibe.
+
+WHERE FREE STOCK PHOTOS FALL SHORT (checked before writing these prompts)
+------------------------------------------------------------------------
+- Unsplash, Pexels, Pixabay, and Freepik all have large free libraries for
+  "African student" (generic, no Hungary/Europe context) and separately for
+  "Budapest" / "Hungary university" (generic, no African subjects). Searched
+  both directly.
+- Nobody has photographed the specific combination this brand needs — a West
+  African / Sierra Leonean student on a Hungarian campus or against Budapest
+  architecture. That combination essentially does not exist as free stock.
+- Recommendation: use free stock ONLY for neutral texture/detail shots (a
+  passport on a desk, a boarding pass, autumn leaves on a Budapest street,
+  the Danube, Parliament building exteriors) — never for a "hero" shot that
+  needs a real represented student, since a viewer's eye goes straight to the
+  face. For anything with a person meant to represent "our student," use the
+  AI prompts below, OR real photos (see note at the bottom — always better
+  when available).
+- Good free-stock hunting grounds for the neutral/backdrop shots:
+  https://unsplash.com/s/photos/budapest
+  https://www.pexels.com/search/budapest/
+  https://pixabay.com/images/search/budapest/
+  https://unsplash.com/s/photos/african-student (for general mood-boarding only,
+  not for final site use as a "this is our student" image)
+
+HOW TO USE THESE PROMPTS
+-------------------------
+- Recommended tools: Adobe Firefly (image_generate tool already available in
+  this environment) or Midjourney v6/7 for photorealism; Ideogram or GPT
+  Image for anything needing legible text-free composition. Firefly is the
+  safest for commercial use (trained on licensed/Adobe Stock content).
+- Always generate at minimum 1600px on the long edge (site uses large hero
+  crops). Ask for a 3:2 or 4:5 ratio depending on placement (noted per prompt).
+- After generating, run a color grade pass (warm shadows, slightly desaturated,
+  gentle burgundy/gold cast) so images feel like one consistent shoot, not
+  stock-photo-of-the-week. Brand palette: burgundy #1f1210, gold #c9a24a,
+  gold-soft #e4c57a, blush #f3e4e2, warm off-white background #fbfaf8.
+- Global negative prompt to append everywhere: "no text, no watermark, no logo,
+  no visible brand names, no exaggerated or stereotyped features, no uncanny
+  hands, no extra fingers, not glossy/plastic AI look, avoid generic stock-photo
+  poses, natural asymmetric candid framing."
+- Always disclose AI-generated imagery is in use if asked by a platform (Meta/
+  Google ad policies increasingly require this) — flagged again in the main plan.
+
+============================================================
+1. HOMEPAGE HERO (replaces /images/hero-graduate.jpg)
+============================================================
+"Editorial portrait of a confident young Sierra Leonean woman in her early
+twenties, natural dark skin tone, short natural hair or neat braids, wearing a
+smart casual blazer over a simple top, standing outdoors in Budapest with the
+Hungarian Parliament building softly blurred in the background across the
+Danube, golden-hour autumn light, warm smile looking slightly off-camera with
+quiet confidence and hope, shallow depth of field, shot on 85mm lens,
+Kodak-Portra-style warm color grade, aspirational but authentic — not a
+corporate stock pose. Vertical 4:5 crop, plenty of negative space at the top
+for a heading to sit over the sky."
+
+============================================================
+2. GROUP CLOSE-UP (replaces /images/gallery/group-closeup.jpg)
+============================================================
+"Candid close-up of three West African students — two young men and one young
+woman, late teens to early twenties, diverse natural hairstyles, laughing
+together and looking at a phone screen, sitting on stone steps of a European
+university building with warm sandstone architecture in soft focus behind
+them, autumn leaves scattered on the ground, natural daylight, warm and
+joyful mood, documentary photography style, no posed stock-photo smiles.
+Landscape 3:2."
+
+============================================================
+3. DUO WITH DIPLOMA (replaces /images/gallery/duo-diploma.jpg)
+============================================================
+"Two Sierra Leonean graduates, one man and one woman, early twenties, holding
+a rolled diploma with a ribbon between them, standing in front of a classic
+Central European university facade (columns, warm stone), both in simple dark
+academic gowns without exaggerated regalia, genuine proud smiles, golden
+autumn afternoon light, shallow depth of field, warm editorial color grade.
+Portrait 4:5."
+
+============================================================
+4. DUO POINTING / EXCITED MOMENT (replaces /images/gallery/duo-point.jpg)
+============================================================
+"Two young Black African students, casual smart clothing, pointing excitedly
+at an acceptance-letter-style document held between them, standing on a
+cobblestone Budapest street with a yellow tram softly blurred in the
+background, candid joyful expression, natural light, warm color grade,
+documentary style not staged. Landscape 3:2."
+
+============================================================
+5. PORTRAIT — RED STOLE (replaces /images/gallery/portrait-red-stole.jpg)
+============================================================
+"Close portrait of a young Sierra Leonean woman wearing a simple dark
+graduation gown with a red honors stole, warm genuine smile, natural skin
+texture, soft window-light studio look with a plain warm-neutral background
+(matching tone #f3e4e2 blush), minimal retouching, editorial beauty-adjacent
+but not overly polished — looks like a real graduate, not a model. Portrait
+4:5."
+
+============================================================
+6. PORTRAIT — POWERFUL LOOK / POST GRADUATION (replaces
+   /images/gallery/portrait-podium.jpg)
+============================================================
+"Three-quarter portrait of a young West African man in a dark academic gown,
+standing at a lectern or podium in a modest European university lecture hall,
+confident composed expression, soft directional window light, warm tones,
+shallow depth of field with the lecture hall blurred behind him. Portrait
+4:5."
+
+============================================================
+7. GROUP — HUNGARIAN CAMPUS (replaces /images/gallery/group-campus.jpg —
+   CURRENT PHOTO IS SOUTHEAST ASIAN ARCHITECTURE, HIGH-PRIORITY FIX)
+============================================================
+"Group of five to six young Black African students of mixed gender, casual
+university clothing (not gowns — everyday campus life), sitting and standing
+together on the steps of a genuinely Central-European-style university
+building — think Corvinus University or ELTE Budapest architectural style:
+pale stone, tall windows, wrought-iron detail — trees with autumn color
+nearby, relaxed candid body language, mid-conversation not posed for camera,
+natural daylight, warm documentary color grade. Landscape 3:2."
+
+============================================================
+8. GROUP — DAFFODIL / SPRING CAMPUS MOMENT (replaces
+   /images/gallery/group-daffodil.jpg)
+============================================================
+"Small group of Sierra Leonean and West African students walking together
+across a European university quad in spring, one carrying books, soft
+blossom trees in the background, relaxed laughing candid moment, natural
+spring light, warm muted color grade consistent with autumn shots elsewhere
+on the site (avoid overly saturated spring greens). Landscape 3:2."
+
+============================================================
+9. PORTRAIT — LOOKING BACK OVER SHOULDER (replaces
+   /images/gallery/portrait-lookback.jpg)
+============================================================
+"Young Black African student, backpack on one shoulder, walking away from
+camera down a cobblestone Budapest street lined with pastel historic
+buildings, looking back over their shoulder with a warm half-smile, golden
+late-afternoon light, cinematic but not overproduced, warm color grade.
+Portrait 4:5."
+
+============================================================
+10. SEATED GRADUATES (replaces /images/gallery/seated-graduates.jpg)
+============================================================
+"Row of West African graduates seated together in academic gowns at an
+outdoor ceremony, genuine mixed expressions (laughing, proud, relieved),
+modest European venue architecture in soft focus behind them, warm afternoon
+light, documentary style, avoid stiff formal photo-line poses. Landscape 3:2."
+
+============================================================
+11. FAMILY MOMENT (replaces /images/gallery/mother-daughter.jpg — current
+    photo has strong Nigerian aso-ebi styling; keep the warmth, ease the
+    costume specificity so it reads as broadly West African / Sierra
+    Leonean rather than one specific ethnic wedding-style outfit)
+============================================================
+"A Sierra Leonean mother and her daughter embracing warmly, daughter in a
+simple dark graduation gown, mother in elegant but understated West African
+attire (solid color wrap, minimal pattern), soft warm studio-style light on
+a plain neutral background, genuine emotional close moment, minimal
+retouching. Portrait 4:5."
+
+============================================================
+12. SECTION BANNER — WIDE GRADUATES (replaces
+    /images/section-graduates.jpg)
+============================================================
+"Wide shot of a small crowd of West African graduates celebrating outdoors,
+caps mid-air or being thrown, genuine motion blur on caps, European
+university building softly visible in the background, warm late-afternoon
+backlight creating a golden rim-light effect, candid photojournalism style.
+Landscape 16:9, keep the center-lower third relatively clear for a text
+overlay."
+
+============================================================
+13. DOCUMENT / PROCESS FLATLAY (new — for How It Works / Guide pages)
+============================================================
+"Flatlay on a warm wood desk: a passport open to the photo page, a boarding
+pass, a printed university acceptance letter with 'Hungary' visible in the
+letterhead area (no real logos), a pen, and a small potted plant, soft
+natural window light from the left, warm color grade matching site palette,
+shot from directly above. Square 1:1 or landscape 3:2."
+
+============================================================
+14. VISA / TRAVEL PREP MOMENT (new — for How It Works page, "visa and
+    travel prep" step)
+============================================================
+"Young Sierra Leonean student at a small desk reviewing a checklist and
+travel documents, laptop open beside them showing a generic calendar/flight
+interface (no real airline branding), warm indoor lamp light mixed with cool
+window daylight, focused determined expression, candid not posed. Landscape
+3:2."
+
+============================================================
+15. ARRIVAL / AIRPORT SUPPORT MOMENT (new — for the airport pickup service)
+============================================================
+"Two people greeting warmly at an airport arrivals area, one just arrived
+with a rolling suitcase and backpack (young West African student), the other
+holding up a small handwritten welcome sign, genuine joyful hug or handshake,
+airport architecture with soft motion blur of background travelers, natural
+mixed indoor lighting, warm color grade. Landscape 3:2."
+
+============================================================
+16. MENTORING / SETTLING-IN MOMENT (new — for post-arrival mentoring
+    service)
+============================================================
+"Two people seated at a small kitchen or café table, one older West African
+mentor figure and one younger Sierra Leonean student, relaxed conversation
+over coffee, laptop and notebook on the table, warm homey interior light,
+candid mid-conversation body language, warm color grade. Landscape 3:2."
+
+============================================================
+17. WEBSITE FAVICON / SOCIAL SHARE BACKDROP (new — optional, for Open
+    Graph image if a photographic OG image is wanted instead of the logo)
+============================================================
+"Wide crop, softly blurred background plate combining a Budapest skyline
+silhouette at golden hour with a very subtle warm burgundy-to-gold gradient
+overlay in the lower third, no people, no text — designed purely as a
+backdrop for the site name and logo to sit on top of in Open Graph cards.
+Landscape 1200x630."
+
+============================================================
+IMPORTANT — DO NOT AI-GENERATE THESE
+============================================================
+The founder and testimonial photos are of REAL named people (Tommy Kaiza
+Koker, Daniel H.R. Wahif Massaquoi, Laurence Sedalia Amartey, Sulaiman
+Sankoh, Khadija Sankoh) and must be actual photographs of them, not AI
+generations or stock substitutes — using a fake face under a real person's
+name is a trust and honesty problem for a business whose whole pitch is
+"someone real is on the ground for you." Current gap: the Khadija Sankoh
+testimonial on the live site is using the generic mother-daughter stock
+image as a placeholder, not a real photo of her — flagged in the main plan
+as an action item to request her actual photo (or a signed-off placeholder
+with her explicit consent) from Tommy.

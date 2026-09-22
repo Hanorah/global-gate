@@ -17,7 +17,7 @@ export default function FaqPage() {
       <PageHero
         eyebrow="FAQ"
         title="Answers before you enquire."
-        body="Clear answers on trust, pricing, timelines, and what we do — and do not — promise."
+        body="Clear answers on trust, pricing, timelines, and what we do and do not promise."
         image={site.images.groupCampus}
         objectPosition="center 45%"
         primaryHref="/enquire"

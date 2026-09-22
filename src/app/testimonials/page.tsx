@@ -18,8 +18,8 @@ export default function TestimonialsPage() {
     <>
       <PageHero
         eyebrow="Testimonials"
-        title="Trusted through referrals — and real conversations."
-        body="Names and contexts below come from Tommy’s client list. Full programme details will be confirmed before final quote polish."
+        title="Trusted through referrals and real conversations."
+        body="Real students, real countries, real outcomes. Here is what a few of them told us about working with Global Gate."
         image={pageHeroes.testimonials.image}
         objectPosition={pageHeroes.testimonials.objectPosition}
         primaryHref="/enquire"
