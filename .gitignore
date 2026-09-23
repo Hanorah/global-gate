@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# secrets / generated infra artifacts
+client_secret_*.json
+*.zone
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
