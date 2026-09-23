@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { site } from "@/lib/site";
 
-/** Production site URL — set NEXT_PUBLIC_SITE_URL in env when you have a domain */
+/** Production site URL — override via NEXT_PUBLIC_SITE_URL in env if needed */
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://globalgatestudents.com";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://globalgatestudentsnetwork.com";
 
-export const defaultOgImage = `${siteUrl}/images/global-gate-logo-v3.png`;
+export const defaultOgImage = `${siteUrl}/images/og-social.jpg`;
 
 export const siteKeywords = [
   "study in Hungary",

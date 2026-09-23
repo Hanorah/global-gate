@@ -77,10 +77,10 @@ export default function GuidePage() {
             </p>
             <div className="mt-8 overflow-hidden rounded-[1.75rem]">
               <Image
-                src={site.images.portraitPodium}
-                alt="Graduate at podium"
-                width={800}
-                height={1000}
+                src={site.images.documentFlatlay}
+                alt="Application documents laid out for review"
+                width={1000}
+                height={560}
                 className="h-auto w-full object-cover"
               />
             </div>
@@ -110,9 +110,10 @@ export default function GuidePage() {
             <p className="eyebrow">Universities</p>
             <h2 className="mt-3 font-display text-4xl md:text-5xl">Hungarian universities to know</h2>
             <p className="mt-4 max-w-2xl text-muted-foreground">
-              A shortlist of well-known Stipendium Hungaricum partner universities offering
-              English-taught programmes. Your advisor will confirm which fits your field, grades,
-              and budget during your enquiry.
+              A general shortlist of well-known Stipendium Hungaricum partner universities offering
+              English-taught programmes, not a list of confirmed placements. Your advisor will
+              discuss which specific universities fit your field, grades, and budget once you
+              enquire.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

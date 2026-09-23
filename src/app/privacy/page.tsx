@@ -86,9 +86,14 @@ export default function PrivacyPage() {
               that.
             </p>
             <p>
-              Google may process this data on servers outside your country as part of providing
-              these services to us. Google’s own privacy and security practices apply to how they
-              handle data on our behalf.
+              We use Resend, an email delivery service, to send you enquiry confirmations and
+              related messages. Your name and email address are shared with Resend only for this
+              purpose.
+            </p>
+            <p>
+              These providers may process your data on servers outside your country as part of
+              providing their services to us. Their own privacy and security practices apply to how
+              they handle data on our behalf.
             </p>
           </Section>
 
@@ -122,8 +127,11 @@ export default function PrivacyPage() {
 
           <Section title="Cookies and analytics">
             <p>
-              This website does not currently use tracking cookies or third-party analytics. If
-              that changes, this page will be updated first.
+              This website does not use tracking or advertising cookies, and we do not run
+              third-party analytics on the pages you use as an applicant. Our staff login system
+              uses strictly necessary session cookies solely to keep our team securely signed in to
+              internal case-management tools — these are not used to track you and are not shared
+              for advertising.
             </p>
           </Section>
 

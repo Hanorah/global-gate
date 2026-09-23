@@ -82,8 +82,8 @@ export default function AboutPage() {
               </div>
               <div className="overflow-hidden rounded-[1.25rem]">
                 <Image
-                  src={site.images.groupCampus}
-                  alt="Campus graduates"
+                  src={site.images.cobblestoneStreet}
+                  alt="A quiet street in Hungary"
                   width={600}
                   height={400}
                   className="h-40 w-full object-cover object-[center_45%]"

@@ -79,6 +79,55 @@ export default function ServicesPage() {
         </Reveal>
       </section>
 
+      <section className="section-pad border-t border-border bg-surface">
+        <div className="container-page">
+          <Reveal className="mx-auto max-w-2xl text-center">
+            <p className="eyebrow">Beyond admission</p>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl">Support doesn&apos;t stop at the airport.</h2>
+            <p className="mt-4 text-muted-foreground">
+              Visa prep, arrival, and settling in are part of the same journey, not an afterthought.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                title: "Visa & travel prep",
+                body: "Appointment prep, checklist review, and travel planning before you fly.",
+                image: site.images.visaPrep,
+              },
+              {
+                title: "Airport & arrival",
+                body: "Landing in a new country is easier when someone is expecting you.",
+                image: site.images.airportArrival,
+              },
+              {
+                title: "Post-arrival mentoring",
+                body: "Support continues while you find your footing in Hungary.",
+                image: site.images.mentoring,
+              },
+            ].map((item, i) => (
+              <Reveal key={item.title} delay={i * 0.06}>
+                <Card className="h-full overflow-hidden rounded-[1.75rem] border-0 shadow-none">
+                  <div className="relative h-52">
+                    <Image
+                      src={item.image}
+                      alt=""
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                  <CardContent className="bg-white p-6">
+                    <h3 className="font-semibold tracking-tight">{item.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{item.body}</p>
+                  </CardContent>
+                </Card>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CtaBand />
     </>
   );

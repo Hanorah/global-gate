@@ -81,23 +81,34 @@ export default function FeesPage() {
           </Reveal>
         </div>
 
-        <Reveal className="container-page mt-12 max-w-3xl">
-          <h3 className="font-display text-3xl">Refund summary</h3>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
-            <li>Application fees (${site.pricing.application.price}) are not refundable, regardless of outcome.</li>
-            <li>
-              If your visa is refused after you followed the supported process fully and in good
-              faith, a 50% refund applies to the {site.pricing.fullGuide.label.toLowerCase()} package.
-            </li>
-            <li>
-              If a visa refusal results from your own actions or omissions (for example, missing
-              appointments or providing false or incomplete information), no refund applies.
-            </li>
-          </ul>
-          <Button nativeButton={false} render={<Link href="/terms" />} variant="link" className="mt-4 px-0">
-            Read full terms
-          </Button>
-        </Reveal>
+        <div className="container-page mt-12 grid gap-8 lg:grid-cols-[1fr_0.6fr] lg:items-start">
+          <Reveal className="max-w-3xl">
+            <h3 className="font-display text-3xl">Refund summary</h3>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
+              <li>Application fees (${site.pricing.application.price}) are not refundable, regardless of outcome.</li>
+              <li>
+                If your visa is refused after you followed the supported process fully and in good
+                faith, a 50% refund applies to the {site.pricing.fullGuide.label.toLowerCase()} package.
+              </li>
+              <li>
+                If a visa refusal results from your own actions or omissions (for example, missing
+                appointments or providing false or incomplete information), no refund applies.
+              </li>
+            </ul>
+            <Button nativeButton={false} render={<Link href="/terms" />} variant="link" className="mt-4 px-0">
+              Read full terms
+            </Button>
+          </Reveal>
+          <Reveal delay={0.08} className="overflow-hidden rounded-[1.5rem]">
+            <Image
+              src={site.images.certificate}
+              alt=""
+              width={700}
+              height={700}
+              className="h-full w-full object-cover"
+            />
+          </Reveal>
+        </div>
       </section>
 
       <CtaBand />

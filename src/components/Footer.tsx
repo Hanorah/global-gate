@@ -9,6 +9,7 @@ export function Footer() {
       <div className="container-page grid gap-12 py-16 md:grid-cols-[1.5fr_1fr_1fr]">
         <div>
           <BrandLogo size="footer" />
+          <p className="mt-4 font-display text-xl">{site.name}</p>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-white/65">
             Opening doors. Expanding futures. Real guidance for African students and international
             applicants who want a clear path into Hungarian higher education.
@@ -44,6 +45,16 @@ export function Footer() {
                 WhatsApp
               </a>
             </li>
+            <li>
+              <a
+                href={site.contact.facebook}
+                target="_blank"
+                rel="noreferrer"
+                className="transition hover:text-white"
+              >
+                Facebook
+              </a>
+            </li>
             <li>{site.contact.address}</li>
           </ul>
         </div>
@@ -54,9 +65,6 @@ export function Footer() {
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-white">Privacy</Link>
             <Link href="/terms" className="hover:text-white">Terms</Link>
-            <a href={site.contact.facebook} target="_blank" rel="noreferrer" className="hover:text-white">
-              Facebook
-            </a>
           </div>
         </div>
       </div>

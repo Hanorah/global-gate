@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { site, whatsappUrl } from "@/lib/site";
+import { siteUrl } from "@/lib/seo";
 
 /**
  * Transactional email sending — Section 5c of docs/PLAN.md.
@@ -71,7 +72,10 @@ function emailShell(preheader: string, bodyHtml: string) {
             <tr>
               <td style="background-color:#f4f1ec;padding:24px 32px;color:#6b6560;font-size:12px;line-height:1.6;font-family:Arial,Helvetica,sans-serif;">
                 ${site.name} &middot; ${site.contact.address}<br />
-                ${site.contact.email} &middot; ${site.contact.phoneDisplay}
+                ${site.contact.email} &middot; ${site.contact.phoneDisplay}<br />
+                <a href="${siteUrl}/privacy" style="color:#6b6560;">Privacy Policy</a>
+                &middot;
+                <a href="${siteUrl}/terms" style="color:#6b6560;">Terms</a>
               </td>
             </tr>
           </table>
@@ -124,7 +128,12 @@ export async function sendApplicantConfirmation(lead: LeadEmailFields) {
       If anything is urgent, you are welcome to message us on WhatsApp any time.
     </p>
     <div style="margin-bottom:8px;">${button(whatsappUrl(), "Message us on WhatsApp")}</div>
-    <p style="margin:24px 0 0;">Warmly,<br />The ${site.name} team</p>
+    <p style="margin:24px 0 0;">Warmly,<br />${site.founder.name}<br />${site.name}</p>
+    <p style="margin:20px 0 0;font-size:12px;color:#6b6560;">
+      You are receiving this email because you submitted an enquiry on ${site.name}'s website.
+      See our <a href="${siteUrl}/privacy" style="color:#6b6560;">Privacy Policy</a> for how we
+      handle your information.
+    </p>
   `;
   return send({
     to: lead.email,
